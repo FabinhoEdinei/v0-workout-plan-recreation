@@ -3,6 +3,10 @@ import type { Metadata } from "next"
 import { Orbitron, Share_Tech_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import HomeIcon from '@/public/icons/home.svg';
+ // Adjust path
+// In nav JSX: <HomeIcon className="h-6 w-6" title="Home 🏠" />
+
 
 const orbitron = Orbitron({
   subsets: ["latin"],
