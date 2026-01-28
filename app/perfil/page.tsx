@@ -1,16 +1,18 @@
 "use client";
 
+import Link from "next/link"; // Importação importante
+
 export default function Page() {
-    return (
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="/perfil">Perfil</a></li>
-                    <li><a href="/historico">Histórico</a></li>
-                    <li><a href="/metas">Metas</a></li>
-                    <li><a href="/ajustes">Ajustes</a></li>
-                </ul>
-            </nav>
-        </main>
-    );
+  return (
+    <main>
+      <nav>
+        <ul>
+          <li><Link href="/perfil">Perfil</Link></li>
+          <li><Link href="/historico">Histórico</Link></li>
+          <li><Link href="/metas">Metas</Link></li>
+          <li><Link href="/ajustes">Ajustes</Link></li>
+        </ul>
+      </nav>
+    </main>
+  );
 }
