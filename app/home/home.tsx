@@ -5,7 +5,7 @@ import { createClient } from "@/lib/supabase/client"
 import { LogOut, Dumbbell } from "lucide-react"
 import Link from "next/link"
 
-export const dynamic = 'force-dynamic'
+
 
 export default function HomePage() {
   const [userEmail, setUserEmail] = useState<string | undefined>(undefined)
