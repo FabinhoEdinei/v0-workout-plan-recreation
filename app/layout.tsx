@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import HomeIcon from '@/public/icons/home.svg';
  
-import Link from "next/link"
+import Link from "next/link";
 
 
 const orbitron = Orbitron({
