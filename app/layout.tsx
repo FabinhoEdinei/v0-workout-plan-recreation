@@ -50,12 +50,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${orbitron.variable} ${shareTechMono.variable} font-sans antialiased`}>
-        {children}
-        <Analytics />
+
 <Link href="/" className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
   <HomeIcon className="h-6 w-6 text-blue-500" aria-label="🏠 Home" />
   <span>Home</span>
 </Link>
+        {children}
+        <Analytics />
       </body>
     </html>
   )
