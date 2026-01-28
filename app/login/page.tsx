@@ -4,6 +4,7 @@ import type React from "react"
 
 import { createClient } from "@/lib/supabase/client"
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
