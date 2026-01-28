@@ -2,8 +2,9 @@ import { User, History, Settings, Target } from 'lucide-react';
 import Link from 'next/link';
 
 // ... dentro do seu componente
-
-<div className="flex gap-4 justify-center p-4">
+export default function PerfilPage() {
+ 
+ return <div className="flex gap-4 justify-center p-4">
   <Link href="/perfil" className="hover:text-blue-400 flex flex-col items-center">
     <User size={24} />
     <span className="text-xs">Perfil</span>
@@ -24,3 +25,4 @@ import Link from 'next/link';
     <span className="text-xs">Ajustes</span>
   </Link>
 </div>
+}
