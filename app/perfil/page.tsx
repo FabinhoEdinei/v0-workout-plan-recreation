@@ -1,28 +1,16 @@
-import { User, History, Settings, Target } from 'lucide-react';
-import Link from 'next/link';
+"use client";
 
-// ... dentro do seu componente
-export default function PerfilPage() {
- 
- return <div className="flex gap-4 justify-center p-4">
-  <Link href="/perfil" className="hover:text-blue-400 flex flex-col items-center">
-    <User size={24} />
-    <span className="text-xs">Perfil</span>
-  </Link>
-  
-  <Link href="/historico" className="hover:text-blue-400 flex flex-col items-center">
-    <History size={24} />
-    <span className="text-xs">Histórico</span>
-  </Link>
-
-  <Link href="/metas" className="hover:text-blue-400 flex flex-col items-center">
-    <Target size={24} />
-    <span className="text-xs">Metas</span>
-  </Link>
-
-  <Link href="/config" className="hover:text-blue-400 flex flex-col items-center">
-    <Settings size={24} />
-    <span className="text-xs">Ajustes</span>
-  </Link>
-</div>
+export default function Page() {
+    return (
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="/perfil">Perfil</a></li>
+                    <li><a href="/historico">Histórico</a></li>
+                    <li><a href="/metas">Metas</a></li>
+                    <li><a href="/ajustes">Ajustes</a></li>
+                </ul>
+            </nav>
+        </main>
+    );
 }
